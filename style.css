@@ -9,6 +9,9 @@
 html{
     scroll-behavior: smooth;
 }
+.element.style {
+    width: 100%;
+}
 
 
 ::-webkit-scrollbar {
@@ -32,8 +35,9 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .services, .skills, .teams, .contact{
     font-family: 'Poppins', sans-serif;
+   
 }
 .about .about-content,
 .services .serv-content,
@@ -315,6 +319,7 @@ section .title::after{
 .services, .teams{
     color:#fff;
     background: rgba(17, 17, 17, 0.507);
+    width: 100%;
 }
 .services .title::before,
 .teams .title::before{
@@ -326,7 +331,7 @@ section .title::after{
     content: "what i provide";
 }
 .services .serv-content .card{
-    width: calc(33% - 20px);
+    width: calc(31% - 0px);
     background: #222;
     text-align: center;
     border-radius: 6px;
@@ -344,7 +349,7 @@ section .title::after{
     transform: scale(1.05);
 }
 .services .serv-content .card i{
-    font-size: 50px;
+    font-size: 20px;
     color: rgb(37, 220, 20);
     transition: color 0.3s ease;
 }
@@ -356,7 +361,6 @@ section .title::after{
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-
 .contact .title::after{
     content: "get in touch";
 }
@@ -461,6 +465,14 @@ section .title::after{
         height: 350px;
         width: 350px;
     }
+    .about, .services, .skills, .teams, .contact{
+        font-family: 'Poppins', sans-serif;
+       width: 160%;
+    }
+    .home{
+        width: 160%;
+    }
+  
 }
 
 @media (max-width: 991px) {
@@ -468,7 +480,7 @@ section .title::after{
         padding: 0 50px;
     }
 }
-@media (max-width: 947px){
+@media (max-width: 960px){
     .menu-btn{
         display: block;
         z-index: 999;
@@ -498,6 +510,9 @@ section .title::after{
         margin: 20px 0;
         font-size: 25px;
     }
+    .navbar{
+        width:100%;
+    }
     .home .home-content .text-2{
         font-size: 70px;
     }
@@ -523,7 +538,7 @@ section .title::after{
         flex: 100%;
     }
     .services .serv-content .card{
-        width: calc(50% - 10px);
+        width: calc(99% - 0px);
         margin-bottom: 20px;
     }
     .skills .skills-content .column,
@@ -531,12 +546,27 @@ section .title::after{
         width: 100%;
         margin-bottom: 35px;
     }
+    .services{
+        width: 160%;
+        
+    }
+   
+    .home{
+        width: 160%;
+    }
+  
 }
 
 @media (max-width: 690px) {
     .max-width{
-        padding: 0 23px;
+        padding: 0 25px;
     }
+    
+
+    .home{
+        width: 160%;
+    }
+
     .home .home-content .text-2{
         font-size: 60px;
     }
@@ -545,6 +575,9 @@ section .title::after{
     }
     .home .home-content a{
         font-size: 20px;
+    }
+    .about.max-width{
+        width: 160%;
     }
 }
 
@@ -558,7 +591,11 @@ section .title::after{
     .about .about-content .right .text,
     .skills .skills-content .left .text{
         font-size: 19px;
+        
     }
+    .element.style {
+    width: 160%;
+}
     .contact .right form .fields{
         flex-direction: column;
     }
