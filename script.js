@@ -112,7 +112,7 @@
             check=""
             ph1=true
         }else{
-            check="Enter correct Number"
+            check="Enter the number properly"
             ph1=false
         }
 
