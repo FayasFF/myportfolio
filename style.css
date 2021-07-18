@@ -499,6 +499,7 @@ section .title::after{
     .about, .services, .skills, .teams, .contact{
         font-family: 'Poppins', sans-serif;
        width: 160%;
+       font-size: 20px;
     }
     .home{
         width: 160%;
