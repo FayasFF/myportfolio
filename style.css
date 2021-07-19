@@ -499,8 +499,9 @@ section .title::after{
     .about, .services, .skills, .teams, .contact{
         font-family: 'Poppins', sans-serif;
        width: 160%;
-       font-size: 20px;
+       font-size: 113%;
     }
+  
     .home{
         width: 160%;
     }
@@ -518,9 +519,7 @@ section .title::after{
         display: block;
         z-index: 999;
     }
-    .menu-btn i.active:before{
-        content: "\f00d";
-    }
+    
     .navbar .menu{
         position: fixed;
         height: 100vh;
@@ -596,9 +595,7 @@ section .title::after{
     }
     
 
-    .home{
-        width: 160%;
-    }
+   
 
     .home .home-content .text-2{
         font-size: 60px;
