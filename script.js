@@ -51,7 +51,7 @@
                 success:function (response){
                     alert("Form submitted successfully")
                     window.location.reload()
-                    //window.location.href="https://google.com"
+                    window.location.href="https://fayasff.github.io/port/?name=fayas&email=1%40gmail.com&phone=908sdfvb&subject="
                 },
                 error:function (err){
                     alert("Something Error")
@@ -79,7 +79,7 @@
             check="Please use Alphabets "
           tex1=false
         }
-
+``
         document.getElementById('userr').innerHTML=check
       }
       var mai1
