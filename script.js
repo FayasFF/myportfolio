@@ -26,14 +26,11 @@
          $('.navbar .menu').toggleClass("active");
          $('.menu-btn i').toggleClass("active");
      });
-     function validation(){
-         alert("working");
-         
-     }
+  
      var typed = new Typed(".typing", {
          strings: [ "Developer", "Designer", "Photographer"],
          typeSpeed: 100,
-         backSpeed: 60,
+         backSpeed: 50,
          loop: true
      });
         
@@ -105,14 +102,18 @@
         var phone = document.getElementById('phone').value
         var check
         var pattern=/^\d{10}$/
+        var paattern=/^[a-zA-Z-()]+(\s+[-a-zA-Z-()]+)*$/
         if(phone==""){
            check="Enter valid number";
            ph1=false
         }else if(phone.match(pattern)){
             check=""
             ph1=true
+        }else if(phone.match(paattern)){
+            check="Dont Enter character"
+            ph1=false
         }else{
-            check="Enter the number properly"
+            check="Please Enter correct 10 number"
             ph1=false
         }
 
